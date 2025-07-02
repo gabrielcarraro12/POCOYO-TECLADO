@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #f7f7f7;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.teclado {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;     
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 90vw;
+    max-width: 1200px;
+}
+
+.tecla {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 120px;
+    height: 220px;
+    border: 2px solid #222;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: transform 0.15s, box-shadow 0.15s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.tecla img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    display: block;
+}
+
+.tecla p {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+    background: #f0f0f0;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.tecla:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border-color: #0078d7;
+}
